@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <link rel="stylesheet" href="week18.css" />
+
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a
+              ><img src="logo copy.jpg" alt="“logo”" width="20" height="20"
+            /></a>
+          </li>
+
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li class="icons">
+            <a
+              href="https://www.linkedin.com/in/andjelija-sreckovic/"
+              target="_blank"
+              aria-label="Andjelija fa-linkedin"
+            >
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="icons">
+            <a href="email.html"><i class="fa fa-envelope"></i></a>
+          </li>
+          <li class="icons">
+            <a
+              href="https://github.com/Andjelijas"
+              target="_blank"
+              aria-label="Andjelija fa-github"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="heroimage">
+        <img src=".\phone copy.png" alt="“hero”" width="1263" height="700" />
+      </div>
+      <div class="hero-text">
+        <h1>Andjelija Sreckovic</h1>
+        <h2>UX Designer</h2>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h1 class="center" id="Skills">My skills</h1>
+      </div>
+
+      <div class="title">
+        <h2>Research</h2>
+        <h2>Ideation</h2>
+        <h2>Design</h2>
+      </div>
+
+      <div class="container-flex">
+        <div class="process-flex-box">
+          <div id="container-flex-image">
+            <img src=".\research.png" alt="research" width="140" height="100" />
+          </div>
+          <p class="center">
+            My skills lie in delivering a thorough research, empathizing with
+            the user and defining a clear problem statement
+          </p>
+        </div>
+
+        <div class="process-flex-box">
+          <div id="container-flex-image">
+            <img src=".\ideate.png" alt="ideate" width="120" height="100" />
+          </div>
+          <p class="center">
+            Share ideas. Listen. Understand impediments. Create personas,
+            diagrams, wireframes and prototypes.
+          </p>
+        </div>
+
+        <div class="process-flex-box">
+          <div id="container-flex-image">
+            <img src=".\design.png" alt="design" width="140" height="100" />
+          </div>
+          <p class="center">
+            I like to design simple, intuitive, user-centered designs that focus
+            on the user's main pain points. Lots of testing and iteration go
+            into this stage.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h1 class="center" id="Projects">Projects</h1>
+      </div>
+
+      <div class="container-flex">
+        <div class="projects-flex-box"></div>
+        <img
+          src="feather.png"
+          alt="feather"
+          width="400"
+          height="250"
+          id="zoom-img"
+        />
+        <img
+          src="pac n go 1.png"
+          alt="pacngo"
+          width="400"
+          height="240"
+          id="zoom-img"
+        />
+      </div>
+
+      <div class="container-flex">
+        <div class="projects-flex-box"></div>
+        <h2 class="center">Feather</h2>
+        <h2 class="center">Pac 'n' Go</h2>
+      </div>
+
+      <div class="container-flex">
+        <p>
+          A Self-care App designed to assist you manage stress and anxiety
+          effectively
+        </p>
+        <p>
+          A Travel App designed to help you plan a trip tailored to your needs
+          efficiently
+        </p>
+      </div>
+
+      <div class="container-flex">
+        <div class="projects-flex-box"></div>
+        <img src="doe.png" alt="doe" width="400" height="250" id="zoom-img" />
+        <img
+          src="saf.png"
+          alt="sheangelsfoundation"
+          width="400"
+          height="240"
+          id="zoom-img"
+        />
+      </div>
+
+      <div class="container-flex">
+        <div class="projects-flex-box"></div>
+        <h2 class="center">Department of Education</h2>
+        <h2 class="center">She Angels Foundation</h2>
+      </div>
+
+      <div class="container-flex">
+        <p>
+          Redesign of a government website for a more intuitive, simple and
+          clean design
+        </p>
+        <p>
+          Redesign of a non-profit organization that focuses on supporting
+          non-profit organizations
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <h1>Contact</h1>
+      <button>Email</button>
+      <button>Linkedin</button>
+      <h2>Let's connect!</h2>
+    </footer>
+    
+*start of jquery*
+
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("img").click(function () {
+          $(this).hide();
+        });
+      });
+
+      $("img").on("click", function () {
+        console.log("You clicked");
+      });
+    </script>
+  </body>
+</html>
