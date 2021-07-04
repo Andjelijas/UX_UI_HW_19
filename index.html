@@ -9,7 +9,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <link rel="stylesheet" href="week18.css" />
+    <link rel="stylesheet" href="UX_UI_HW_19.css" />
 
     <title>Portfolio</title>
   </head>
@@ -28,6 +28,16 @@
           <li><a href="#About">About</a></li>
           <li><a href="#Projects">Projects</a></li>
           <li><a href="#Contact">Contact</a></li>
+
+          <li class="icons">
+            <a
+              href="https://github.com/Andjelijas"
+              target="_blank"
+              aria-label="Andjelija fa-github"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+          </li>
           <li class="icons">
             <a
               href="https://www.linkedin.com/in/andjelija-sreckovic/"
@@ -40,25 +50,30 @@
           <li class="icons">
             <a href="email.html"><i class="fa fa-envelope"></i></a>
           </li>
-          <li class="icons">
-            <a
-              href="https://github.com/Andjelijas"
-              target="_blank"
-              aria-label="Andjelija fa-github"
-            >
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-          </li>
         </ul>
       </nav>
     </header>
     <section>
-      <div class="heroimage">
-        <img src=".\phone copy.png" alt="“hero”" width="1263" height="700" />
-      </div>
-      <div class="hero-text">
-        <h1>Andjelija Sreckovic</h1>
-        <h2>UX Designer</h2>
+      <div class="hero">
+        <h1 id='about'>Andjelija Sreckovic</h1>
+        <h3 id='about'>UX Designer</h3>
+        <img id='photo' src=".\Frame 9.png" alt="hero" width="300" height="300" style="float:left"/>
+        
+        <p id="aboutparagraph">
+          Hi, happy to see you here! My name is Andjelija (Un-jelly-ya) and I'm
+          a UX designer, based in Chicago.
+          <br></br>
+           I am passionate about designing
+          clean, engaging, and meaningful user-centered designs; and my
+          background in psychology allows me to do so by truly connecting and
+          empathizing with the users.
+          <br></br>
+          When I'm not designing I like to spend as
+          much time as I can outside, usually by the lake or exploring the city
+          (fairly new here). I also like to draw minimalist / single-line art. ‍
+          Would love to connect and chat about designs or anything you find
+          interesting on my page.
+        </p>
       </div>
     </section>
 
@@ -178,20 +193,45 @@
     </section>
 
     <footer>
-      <h1>Contact</h1>
-      <button>Email</button>
-      <button>Linkedin</button>
+      <h1 id="Contact">Contact</h1>
+      <p>andjelijadesign@gmail.com</p>
+
+      
+      <button class="connect">Linkedin
+        <a
+        href="https://www.linkedin.com/in/andjelija-sreckovic/"
+        target="_blank"
+        aria-label="Andjelija fa-linkedin"
+      >
+        <i class="fa fa-linkedin" aria-hidden="true"></i>
+      </a>
+      </button>
+
+      <button class="connect">GitHub
+      <a
+              href="https://github.com/Andjelijas"
+              target="_blank"
+              aria-label="Andjelija fa-github"
+            >
+              <i class="fa fa-github" aria-hidden="true"></i>
+            </a>
+        </button>
+
       <h2>Let's connect!</h2>
     </footer>
-    
-*start of jquery*
+
+    *start of jquery*
 
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
       $(document).ready(function () {
-        $("img").click(function () {
-          $(this).hide();
+        $("img").hover(function () {
+          $(this).elevateZoom({
+            zoomType: "lens",
+            lensShape: "round",
+            lensSize: 200,
+          });
         });
       });
 
