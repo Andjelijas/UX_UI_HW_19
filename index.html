@@ -132,14 +132,14 @@
           alt="feather"
           width="400"
           height="250"
-          id="zoom-img"
+          id="zoom-img1"
         />
         <img
           src="pac n go 1.png"
           alt="pacngo"
           width="400"
           height="240"
-          id="zoom-img"
+          id="zoom-img2"
         />
       </div>
 
@@ -162,13 +162,13 @@
 
       <div class="container-flex">
         <div class="projects-flex-box"></div>
-        <img src="doe.png" alt="doe" width="400" height="250" id="zoom-img" />
+        <img src="doe.png" alt="doe" width="400" height="250" id="zoom-img3" />
         <img
           src="saf.png"
           alt="sheangelsfoundation"
           width="400"
           height="240"
-          id="zoom-img"
+          id="zoom-img4"
         />
       </div>
 
@@ -195,43 +195,51 @@
       <p>andjelijadesign@gmail.com</p>
 
       
-      <button class="connect">Linkedin
-        <a
-        href="https://www.linkedin.com/in/andjelija-sreckovic/"
-        target="_blank"
-        aria-label="Andjelija fa-linkedin"
-      >
-        <i class="fa fa-linkedin" aria-hidden="true"></i>
-      </a>
-      </button>
+     
 
-      <button class="connect">GitHub
-      <a
-              href="https://github.com/Andjelijas"
-              target="_blank"
-              aria-label="Andjelija fa-github"
-            >
-              <i class="fa fa-github" aria-hidden="true"></i>
-            </a>
-        </button>
+<a href="https://github.com/Andjelijas" target="_blank" aria-label="Andjelija fa-github"> 
+<button class="connect"> GitHub <i class="fa fa-github" aria-hidden="true"></i></button> </a>
+
+<a href="https://www.linkedin.com/in/andjelija-sreckovic/" target="_blank" aria-label="Andjelija fa-linkedin"> 
+    <button class="connect"> Linkedin <i class="fa fa-linkedin" aria-hidden="true"></i></button> </a>
+
+    
+      
 
       <h2>Let's connect!</h2>
     </footer>
 
-    *start of jquery*
+    <!----*start of jquery*---->
+
 
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script>
-      $(document).ready(function () {
-        $("img").hover(function () {
-          $(this).elevateZoom({
-            zoomType: "lens",
-            lensShape: "round",
-            lensSize: 200,
-          });
-        });
-      });
+      
+
+      $(document).ready(function(){
+  $("#zoom-img1").hover(function(){
+    $(this).css('border', '2px solid coral');
+  });
+});
+
+$(document).ready(function(){
+  $("#zoom-img2").hover(function(){
+    $(this).css('border', '2px solid coral');
+  });
+});
+
+$(document).ready(function(){
+  $("#zoom-img3").hover(function(){
+    $(this).css('border', '2px solid coral');
+  });
+});
+
+$(document).ready(function(){
+  $("#zoom-img4").hover(function(){
+    $(this).css('border', '2px solid coral');
+  });
+});
 
       $("img").on("click", function () {
         console.log("You clicked");
