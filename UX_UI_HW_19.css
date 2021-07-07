@@ -89,22 +89,22 @@ li a:hover {
 .container-flex {
     display: flex;
     flex-direction: row;
-    background-color: white;
     justify-content: space-around;
     color: #073B39;
     margin-bottom: 80px;
 }
 
-a{
+
+a {
     text-decoration: none;
 }
+
 .process-flex-box {
     margin: 40px;
     padding: 20px;
     height: 260px;
     width: 260px;
     border-radius: 100%;
-    background-color: white;
     box-shadow: 0 0 0 2pt #073B3A;
     justify-content: space-around;
 }
@@ -115,9 +115,13 @@ a{
     padding-top: 30px;
 }
 
+
+
+
 .projects-flex-box {
     position: absolute;
 }
+
 
 footer {
     display: center;
